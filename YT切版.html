@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版 Youtube</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <!-- <div id="container"> -->
+    <div id="top">
+
+        <span class="material-icons grey" style="padding: 8px;margin-right: 16px;">menu</span>
+        <table id="yt_logo" style="margin-right: 60px;">
+            <tr style="width:129px;">
+                <td><span class="material-icons " id="logo" style="color: red;">smart_display</span></td>
+                <td>YouTube<sup>TW</sup></td>
+            </tr>
+        </table>
+
+        <table id="tb_search" style="width:624px;">
+            <tr>
+                <td style="width:562px;border: 1px solid grey;padding-left:16px;">搜尋</td>
+                <td style="width:60px;border: 1px solid grey;text-align: center;"><span class="material-icons grey" id="search">search</span></td>
+            </tr>
+        </table>
+
+
+        <span class="material-icons grey" id="mic" style="margin-right: 45px;padding: 8px;">mic</span>
+        <span class="material-icons grey" id="Apps" style="padding: 8px;">apps</span>
+        <span class="material-icons grey" id="more_horiz" style="padding: 8px;">more_horiz</span>
+        <table id="login">
+            <tr>
+                <td>
+                    <span class="material-icons blue" id="account_circle">account_circle</span>
+                </td>
+                <td class="blue">登入</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 一般顯示，晚點弄 -->
+    <!-- <div id="left">        
+        </div> -->
+    <div id="left_hide">
+        <table id="Table01">
+            <tr>
+                <td class="icon"><span class="material-icons grey">home</span></td>
+                <td class="iconText">首頁</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">explore</span></td>
+                <td class="iconText">探索</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">subscriptions</span></td>
+                <td class="iconText">訂閱內容</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <hr>
+                <td class="icon"><span class="material-icons grey">video_library</span></td>
+                <td class="iconText">媒體庫</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">history</span></td>
+                <td class="iconText">觀看紀錄</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="material-icons grey" id="account_circle">account_circle</span>
+                </td>
+                <td class="iconText">登入</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <table id="Table02">
+            <tr>
+                <td></td>                
+                <td class="hideTh">YOUTUBE精選</td>
+            <tr>
+                <td class="icon"><img
+                        src="https://yt3.ggpht.com/Xm4fXS4y_ygX2v6EjEmYjkvTHxOuPn9dM0VUzm9O9Y-7Z6ETIuNp1JOPoMtfTGUGC6J_P_0h=s88-c-k-c0x00ffffff-no-rj-mo">
+                </td>
+                <td class="iconText">音樂</td>
+            </tr>
+            <tr>
+                <td class="icon"><img
+                        src="https://yt3.ggpht.com/mLaH2v2ingrnvYhEzCofqORLPG_cJOTMWFmnNfxCKi6qyqJ7XsbRp3P4FIQDoE3G-E69JXnC3Q=s88-c-k-c0x00ffffff-no-rj">
+                </td>
+                <td class="iconText">體育</td>
+            </tr>
+            <tr>
+                <td class="icon"><img
+                        src="https://yt3.ggpht.com/uDiK5-k6BM8GUFfwA3hJbjbcsPsD9hkFxbxu5FOfiQLMhNYfxeMAWYajpp2gBkQoclXveh-E6Q=s88-c-k-c0x00ffffff-no-rj">
+                </td>
+                <td class="iconText">遊戲</td>
+            </tr>
+            <tr>
+                <td class="icon"><img
+                        src="https://yt3.ggpht.com/EWk97IQr34nqH2nYpC0RIHGTavflWdCNdQEgF3k7mI5S_ItQxw7W40i8FAXCX8JHXInpfDC3Vg=s88-c-k-c0x00ffffff-no-rj">
+                </td>
+                <td class="iconText">新聞</td>
+            </tr>
+            <tr>
+                <td class="icon"><img
+                        src="https://yt3.ggpht.com/8D6JlsnvwDZFMdcbjqVji82kggP3aXXbO-yBD0RFrKlp4G1zNt9wcqcVTSPnAI8GuUAbDYQwsg=s88-c-k-c0x00ffffff-no-rj">
+                </td>
+                <td class="iconText">直播</td>
+            </tr>
+            <tr>
+                <td class="icon"><img
+                        src="https://yt3.ggpht.com/-eyA2_gVeUJUcsqPHwrTKP3kZPsfA_Wu17yJfy843oKMAue3ShHzuprmw8kNxVwauyRUaqLXdw=s88-c-k-c0x00ffffff-no-rj">
+                </td>
+                <td class="iconText">360 度影片</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">add_circle</span></td>
+                <td class="iconText">瀏覽頻道</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <table id="Table03">
+            <tr>
+                <td></td>                
+                <td class="hideTh">更多YOUTUBE功能</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">smart_display</span></td>
+                <td class="iconText">Youtube Premium</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">podcasts</span></td>
+                <td class="iconText">直播</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">settings</span></td>
+                <td class="iconText">設定</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">flag</span></td>
+                <td class="iconText">檢舉紀錄</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">help</span></td>
+                <td class="iconText">說明</td>
+            </tr>
+            <tr>
+                <td class="icon"><span class="material-icons grey">info</span></td>
+                <td class="iconText">提供意見</td>
+            </tr>
+            <tr>
+                <td class="hr">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+
+        <div id="Table04"></div>
+
+    </div>
+
+    <div id="main">
+        <div id="banner"></div>
+        <div id="block">
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v01_Mahalia - Hide Out.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Mahalia - Hide Out | A COLORS SHOW</div>                
+                    <div class="channel">
+                        <h5>COLORS<br>6.8M views．2years ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v02_Papooz - Theatrical State of Mind.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Papooz - Theatrical State of Mind | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>882K views．1year ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v03_Luedji Luna - Acalanto.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Luedji Luna - Acalanto | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>2.1M views．1year ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v04_Rincon Sapiência - Mundo Manicongo.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Rincon Sapiência - Mundo Manicongo | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>1M views．1year ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v05_Ari Lennox - I Been.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Ari Lennox - I Been | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>3.4M views．1year ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v06_Joel Culpepper - Woman.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Joel Culpepper - Woman | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>13.5M views．3years ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v07_Madison McFerrin - TRY.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Madison McFerrin - TRY | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>1.7M views．2years ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v08_Snoh Aalegra - Fool For You.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Snoh Aalegra - Fool For You | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>5.7M views．2years ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v09_Dua Saleh - Sugar Mama.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Dua Saleh - Sugar Mama | A COLORS SHOW
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>752K views．1year ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v10_Jorja Smith - Blue Lights.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Jorja Smith - Blue Lights | A COLORS SHOW</div>                
+                    <div class="channel">
+                        <h5>COLORS<br>67.7M views．3years ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v11_Masego - Navajo.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Masego - Navajo | A COLORS SHOW</div>                
+                    <div class="channel">
+                        <h5>COLORS<br>46.9M views．4years ago</h5>
+                    </div>
+                </div>            
+            </div>
+            <div class="vid">
+                <div class="v_pic"><img src="./pic/v12_Pierre Kwenders - Amours d'Été.jpg" alt=""></div>
+                <div class="col">                
+                    <div class="v_title"><img src="./pic/icon_colors.jpg" alt="">Pierre Kwenders - Amours d'Été | A COLORS SHOW (prod. by Branko)
+                    </div>                
+                    <div class="channel">
+                        <h5>COLORS<br>882K views．1year ago</h5>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+/*整體*******************************************************/
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/*top*******************************************************/
+
+
+#top {
+  width: 100%;
+  height: 56px;
+  background: #fff;
+  padding: 16px;
+}
+
+
+#yt_logo {
+  display: inline-block;
+}
+
+sup {
+  font-size: 10%;
+}
+#tb_search {
+  display: inline-block;
+  border: 1px solid grey;
+}
+#tb_search tr td {
+  height: 100%;
+}
+#search tr td :nth-child(2) {
+  background: grey;
+}
+
+#more_horiz {
+  transform: rotate(90deg);
+}
+
+#login {  
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 11px;
+  border:1.2px;
+  border: 1px solid #065fd4;
+}
+.blue{
+  color:#065fd4;
+}
+
+/* left****************************************************** */
+
+#left_hide {
+  width: 240px;
+  height: 100vh;
+  float: left;
+  /* position: fixed; */
+  background: #FFF;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#left_hide table{
+  width: 100%;
+  text-align: center;
+  margin-left: 24px;
+}
+#left_hide table tr{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 40px;
+}
+.hideTh {
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
+  text-align: left;
+  /* padding-left: 24px; */
+  /* width: 100%; */
+}
+
+.hr {
+  display: block;
+  /* width: 20px; */
+}
+.icon{
+  width: 16px;
+  margin:0;
+  padding: 0;;
+}
+
+
+.iconText{
+  text-align: left;
+  padding-left: 24px;
+}
+.icon img {
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.grey{
+  color: #808080;
+}
+
+/* main****************************************************** */
+
+#main {
+  width: calc(100vw - 240px);
+  height: calc(100vh - 56px);
+
+  float: right;
+  /* position: absolute; */
+
+  background: #FFF;
+  overflow: scroll;
+}
+
+#banner{
+  height: 260px;
+  width: 100%;
+  background: #000;
+}
+
+#banner::before{
+  width: 200px;
+  height: 24px;
+  content: 'Youtube Premium';
+  position: relative;
+  top:30px;
+  left: 40px;
+  font-size: 1.5rem;
+  border: 1px solid #000;
+  background:#fff;
+  
+
+}
+
+
+#banner::after{
+  width: 400px;
+  height: 70px;
+  content: '盡情觀看所有喜愛的影片，不受任何廣到干擾';
+  position: relative;
+  top:80px;
+  left: -140px;
+  font-size: 1.8rem;
+  border: 1px solid #000;
+  background:#fff;
+  line-height: 35px;
+  
+}
+#block{
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+.vid{
+  width: 320px;
+  margin-top: 24px;
+  margin-left: 20px;
+  position: relative;
+  float:left;
+}
+.v_pic img{
+  width: 320px;
+  height: 180px;
+  margin-right: 20px;
+}
+.col{
+  width: 320px;
+  height: 95px;
+}
+.v_title{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  max-height: 4rem;
+  overflow: hidden;
+}
+
+.v_title img{
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
